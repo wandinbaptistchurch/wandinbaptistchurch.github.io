@@ -2,29 +2,45 @@
 <!--Created using XmlSitemapGenerator.org - Free HTML, RSS and XML sitemap generator-->
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
   <url>
-    <loc>http://wandinbaptistchurch.com.au/</loc>
-    <changefreq>monthly</changefreq>
+    <loc>http://wandinbaptistchurch.com.au</loc>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>http://wandinbaptistchurch.com.au/privacy.html</loc>
+    <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>http://wandinbaptistchurch.com.au/contact-us.html</loc>
-    <changefreq>monthly</changefreq>
-  </url>
-  <url>
-    <loc>http://wandinbaptistchurch.com.au/meet-the-pastor.html</loc>
-    <changefreq>monthly</changefreq>
-  </url>
-  <url>
-    <loc>http://wandinbaptistchurch.com.au/wandin-baptist-history.html</loc>
-    <changefreq>monthly</changefreq>
+    <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>http://wandinbaptistchurch.com.au/our-beliefs.html</loc>
-    <changefreq>monthly</changefreq>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>http://wandinbaptistchurch.com.au/wandin-baptist-history.html</loc>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>http://wandinbaptistchurch.com.au/safe-church.html</loc>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>http://wandinbaptistchurch.com.au/meet-the-pastor.html</loc>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>http://wandinbaptistchurch.com.au/2020 Wandin Baptist Safe Church And Child Safe Proceedure with logo.pdf</loc>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>http://wandinbaptistchurch.com.au/2020 Wandin Baptist Safe Church And Child Safe Policy with logo.pdf</loc>
+    <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>http://wandinbaptistchurch.com.au/index.html</loc>
-    <changefreq>monthly</changefreq>
+    <changefreq>weekly</changefreq>
   </url>
 </urlset>
-<!--<guid value="d3e523c2-1849-4b67-8557-e4fe21b8b437" />-->
+<!--<guid value="2b473db3-3dc2-4644-a97f-9eb8137604d7" />-->
 <!--Created using XmlSitemapGenerator.org - Free HTML, RSS and XML sitemap generator-->
