@@ -127,8 +127,9 @@ sup {
     top: -0.5em;
 }
 img {
+    display: block; 
+    height: auto; 
     width: 100%;
-    border-style: none;
 }
 svg:not(:root) {
     overflow: hidden;
@@ -537,7 +538,7 @@ nav.main__navigation ul li {
     margin-bottom: 1.618rem;
 }
 article {
-    max-width: 1200px;
+    max-width: 80%;
     margin: 4.854rem auto;
     padding: 0 4%;
 }
@@ -840,19 +841,26 @@ a[href$='.pdf'] {
     color: rgb(29, 29, 29);
     text-decoration: underline;
 }
-
-@media screen and (min-width: 900px){
+@media screen and (min-width: 800px) {
     .photo--grid {
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
     }
+
+    .photo--grid figure {
+        margin: 0;
+        flex: 1;
+        height: auto;
+
+    }
+}
+.photo--grid figcaption {
+    text-align:center;
+    margin: 1rem 0;
 }
 
 
-@media screen and (min-width: 900px){
-    .photo--grid img {
-        display: block;
-        margin: 0 auto;
-        flex: 1;
-    }
+.logo img {
+    display: block;
+    width: auto;
 }
