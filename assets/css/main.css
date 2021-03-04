@@ -840,11 +840,7 @@ a[href$='.pdf'] {
     color: rgb(29, 29, 29);
     text-decoration: underline;
 }
-img {
-    min-width: 100%;
-    display: block;
-    margin: 0 auto;
-}
+
 @media screen and (min-width: 900px){
     .photo--grid {
         display: flex;
