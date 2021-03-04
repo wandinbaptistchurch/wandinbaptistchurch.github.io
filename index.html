@@ -7,7 +7,31 @@
   <title>Wandin Baptist Church</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="assets/css/main.css">
+  <style>
+    @media screen and (min-width: 800px) {
+    .photo--grid {
+        display: flex;
+        justify-content: space-between;
+    }
 
+    .photo--grid figure {
+        margin: 0;
+        flex: 1;
+        height: auto;
+
+    }
+}
+.photo--grid figcaption {
+    text-align:center;
+    margin: 1rem 0;
+}
+
+
+.logo img {
+    display: block;
+    width: auto;
+}
+  </style>
 </head>
 
 <body>
@@ -48,12 +72,17 @@
     <p>Welcome to Wandin Baptist Church’s home on the web &mdash; a place to learn, to grow, to serve and get connected
       with men and women seeking to grow in their relationship with Jesus Christ.</p>
     <p>We meet for worship weekly on Sundays at 10am, corner Clegg Road &amp; Warburton Highway, Wandin North</p>
-
-    <!-- <div class="photo--grid">
-      <img src="assets/img/Wandin-Baptist-with-cars.jpg" alt="Church building with multiple cars parked in front of it">
-      <img src="assets/img/Wandin-Baptist-Ladies.jpg" alt="a Group of Ladies Meeting for a bible study" title="a Group of Ladies Meeting for a bible study">
-    </div> -->
   </article>
+  <div class="photo--grid">
+    <figure>
+      <img src="assets/img/Wandin-Baptist-with-cars.jpg" alt="Church building with multiple cars parked in front of it">
+      <figcaption>Wandin Baptist Church Building</figcaption> 
+    </figure>
+    <figure>
+      <img src="assets/img/Wandin-Baptist-Ladies.jpg" alt="a Group of Ladies Meeting for a bible study" title="a Group of Ladies Meeting for a bible study">
+      <figcaption>Ladies Bible Study</figcaption>  
+    </figure> 
+  </div>
   
 
   
@@ -139,7 +168,7 @@
 
   </footer><!-- end footer -->
   <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
-  <script src="/assets/js/min/main.js"></script>
+  <script src="assets/js/min/main.js"></script>
 </body>
 
 </html>
