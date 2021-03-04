@@ -141,9 +141,7 @@ samp {
     font-family: monospace, monospace;
     font-size: 1em;
 }
-figure {
-    margin: 1em 40px;
-}
+
 hr {
     -webkit-box-sizing: content-box;
     box-sizing: content-box;
@@ -840,27 +838,4 @@ a[href$='.pdf'] {
 .contact-us a:hover {
     color: rgb(29, 29, 29);
     text-decoration: underline;
-}
-@media screen and (min-width: 800px) {
-    .photo--grid {
-        display: flex;
-        justify-content: space-between;
-    }
-
-    .photo--grid figure {
-        margin: 0;
-        flex: 1;
-        height: auto;
-
-    }
-}
-.photo--grid figcaption {
-    text-align:center;
-    margin: 1rem 0;
-}
-
-
-.logo img {
-    display: block;
-    width: auto;
 }
