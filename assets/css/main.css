@@ -820,3 +820,11 @@ body {
         margin-top: 1rem;
     }
 }
+
+.email a {
+    color: black;
+}
+
+.email a:hover  {
+    text-decoration: underline;
+}
