@@ -475,34 +475,142 @@ nav.main__navigation ul {
 nav.main__navigation ul li {
     margin-right: 0.809rem;
 }
+.header--wrapper {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+.nav-toggle {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    gap: 5px;
+    width: 44px;
+    height: 44px;
+    padding: 0;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+}
+.nav-toggle__bar {
+    display: block;
+    width: 24px;
+    height: 3px;
+    background-color: #fff;
+    border-radius: 2px;
+    -webkit-transition: -webkit-transform 0.2s, opacity 0.2s;
+    transition: transform 0.2s, opacity 0.2s;
+}
+.nav-toggle[aria-expanded="true"] .nav-toggle__bar:nth-child(1) {
+    -webkit-transform: translateY(8px) rotate(45deg);
+    transform: translateY(8px) rotate(45deg);
+}
+.nav-toggle[aria-expanded="true"] .nav-toggle__bar:nth-child(2) {
+    opacity: 0;
+}
+.nav-toggle[aria-expanded="true"] .nav-toggle__bar:nth-child(3) {
+    -webkit-transform: translateY(-8px) rotate(-45deg);
+    transform: translateY(-8px) rotate(-45deg);
+}
+nav.main__navigation {
+    display: none;
+    width: 100%;
+    -webkit-box-ordinal-group: 4;
+    -webkit-order: 3;
+    -ms-flex-order: 3;
+    order: 3;
+    padding-top: 0.5rem;
+}
+nav.main__navigation.is-open {
+    display: block;
+}
+nav.main__navigation ul li {
+    margin-right: 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+}
+nav.main__navigation ul li a:not(.btn) {
+    display: block;
+    padding: 0.75rem 0;
+}
+nav.main__navigation .btn--giving {
+    display: block;
+    width: 100%;
+    margin: 1rem 0 0;
+    text-align: center;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
 @media screen and (min-width: 860px) {
     .header--wrapper {
-        display: -webkit-box;
-        display: -webkit-flex;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-orient: horizontal;
-        -webkit-box-direction: normal;
-        -webkit-flex-direction: row;
-        -ms-flex-direction: row;
-        flex-direction: row;
-        -webkit-box-pack: justify;
-        -webkit-justify-content: space-between;
-        -ms-flex-pack: justify;
-        justify-content: space-between;
-        -webkit-box-align: center;
-        -webkit-align-items: center;
-        -ms-flex-align: center;
-        align-items: center;
+        -webkit-flex-wrap: nowrap;
+        -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    }
+    .nav-toggle {
+        display: none;
+    }
+    nav.main__navigation {
+        display: block;
+        width: auto;
+        -webkit-box-ordinal-group: 1;
+        -webkit-order: 0;
+        -ms-flex-order: 0;
+        order: 0;
+        margin-left: auto;
+        padding-top: 0;
     }
     nav.main__navigation ul {
         display: -webkit-box;
         display: -webkit-flex;
         display: -ms-flexbox;
         display: flex;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-flex-wrap: nowrap;
+        -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
     }
     nav.main__navigation ul li {
         margin-right: 1.618rem;
+        border-top: none;
+    }
+    nav.main__navigation ul li:last-child {
+        margin-right: 0;
+    }
+    nav.main__navigation ul li a:not(.btn) {
+        display: inline;
+        padding: 0;
+    }
+    nav.main__navigation .btn--giving {
+        display: inline-block;
+        width: auto;
+        margin: 0;
+        text-align: inherit;
+        line-height: 1.2;
     }
 }
 .banner {
@@ -812,13 +920,6 @@ footer[role="contentinfo"] .main__footer--content ul a:hover {
 
 body {
     overflow-x: hidden;
-}
-
-@media screen and (max-width: 992px) {
-    .btn--giving {
-        display: inline-block;
-        margin-top: 1rem;
-    }
 }
 
 .email a {

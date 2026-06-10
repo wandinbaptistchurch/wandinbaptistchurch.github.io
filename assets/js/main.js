@@ -30,4 +30,44 @@
   window.addEventListener("resize", callbackFunc);
   window.addEventListener("scroll", callbackFunc);
 
+  var navToggle = document.querySelector(".nav-toggle");
+  var mainNav = document.getElementById("main-nav");
+
+  if (navToggle && mainNav) {
+    function closeNav() {
+      mainNav.classList.remove("is-open");
+      navToggle.setAttribute("aria-expanded", "false");
+      navToggle.setAttribute("aria-label", "Open menu");
+    }
+
+    function openNav() {
+      mainNav.classList.add("is-open");
+      navToggle.setAttribute("aria-expanded", "true");
+      navToggle.setAttribute("aria-label", "Close menu");
+    }
+
+    navToggle.addEventListener("click", function() {
+      if (mainNav.classList.contains("is-open")) {
+        closeNav();
+      } else {
+        openNav();
+      }
+    });
+
+    var navLinks = mainNav.querySelectorAll("a");
+    for (var j = 0; j < navLinks.length; j++) {
+      navLinks[j].addEventListener("click", function() {
+        if (window.innerWidth < 860) {
+          closeNav();
+        }
+      });
+    }
+
+    window.addEventListener("resize", function() {
+      if (window.innerWidth >= 860) {
+        closeNav();
+      }
+    });
+  }
+
 })();
